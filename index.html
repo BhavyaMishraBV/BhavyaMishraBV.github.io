@@ -2,17 +2,20 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<div class="wrapper">
+  <h1>Bhavya Mishra</h1>
+  <p>
+    I’m a Machine Learning researcher and software engineer focused on LLMs, healthcare AI, and scientific computing.
+    This portfolio contains my thesis, projects, and professional resume.
+  </p>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <h2>🔬 Featured Projects</h2>
+  <ul>
+    <li><strong>Capstone:</strong> AI-Powered Muscle Disease Assistant – Chatbot built using BioGPT + Mistral-7B</li>
+    <li><strong>Doc2Vec Disease Predictor:</strong> Semantic classifier using PubMed & SNOMED CT</li>
+    <li><strong>Thesis:</strong> <a href="thesis.md">Pion-Based Cosmological Simulation</a></li>
+  </ul>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+  <h2>📄 Resume</h2>
+  <p><a href="resume.pdf" target="_blank">View My Resume (PDF)</a></p>
 </div>
