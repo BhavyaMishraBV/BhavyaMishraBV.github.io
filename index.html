@@ -2,20 +2,95 @@
 layout: default
 ---
 
-<div class="wrapper">
-  <h1>Bhavya Mishra</h1>
-  <p>
-    I’m a Machine Learning researcher and software engineer focused on LLMs, healthcare AI, and scientific computing.
-    This portfolio contains my thesis, projects, and professional resume.
-  </p>
+<style>
+  .main-container {
+    font-family: sans-serif;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
 
-  <h2>🔬 Featured Projects</h2>
-  <ul>
-    <li><strong>Capstone:</strong> AI-Powered Muscle Disease Assistant – Chatbot built using BioGPT + Mistral-7B</li>
-    <li><strong>Doc2Vec Disease Predictor:</strong> Semantic classifier using PubMed & SNOMED CT</li>
-    <li><strong>Thesis:</strong> <a href="thesis.md">Pion-Based Cosmological Simulation</a></li>
-  </ul>
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
 
-  <h2>📄 Resume</h2>
-  <p><a href="resume.pdf" target="_blank">View My Resume (PDF)</a></p>
+  header img {
+    height: 80px;
+    margin-top: 10px;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .content-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 1.5rem;
+    flex: 1 1 250px;
+    min-width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  footer {
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+  }
+</style>
+
+<div class="main-container">
+
+  <!-- HEADER -->
+  <header>
+    <h1>Bhavya Mishra</h1>
+    <!img src="images/logo.png" alt="Logo (optional)" />
+  </header>
+
+  <!-- INTRO / ABOUT -->
+  <div class="intro">
+    <p>Hello and welcome! I'm a Machine Learning researcher focused on LLMs, healthcare AI, and scientific computing.</p>
+    <p>Learn more <a href="about.md">About Me</a> or leave a <a href="message.md">Message</a>.</p>
+  </div>
+
+  <!-- 3 CARDS -->
+  <div class="content-boxes">
+    <!-- Projects -->
+    <div class="card">
+      <h3>📁 <a href="projects.md">Projects</a></h3>
+      <p>Explore tools and research-based software I’ve developed or contributed to.</p>
+    </div>
+
+    <!-- Research -->
+    <div class="card">
+      <h3>🔬 <a href="thesis.md">Research</a></h3>
+      <p>Thesis, experiments, and simulation work — plus a link to my honors research.</p>
+    </div>
+
+    <!-- Future Contact -->
+    <div class="card">
+      <h3>📬 Contact (Coming Soon)</h3>
+      <p>A form or chat system that lets users reach me directly.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Thanks for visiting! • <a href="resume.pdf">Resume</a> • 
+    <a href="mailto:bmishra01@manhattan.edu">Email</a> • 
+    <a href="https://linkedin.com/in/YOUR-LINK">LinkedIn</a></p>
+  </footer>
+
 </div>
