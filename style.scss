@@ -2,10 +2,10 @@
 .hero {
   position: relative;
   height: 350px;
-  background: url('{{ "/nightSky1.jpg" | relative_url }}') center/cover no-repeat;
+  background: url('nightSky1.jpg') center/cover no-repeat;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
   color: #ffffff;
 }
@@ -16,7 +16,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* darken for text visibility */
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -64,37 +64,22 @@
   text-decoration: underline;
 }
 
-/* ===== MAIN BODY ===== */
+/* ===== BODY BACKGROUND ===== */
 body {
-  background:  url('{{ "/desert1.jpg" | relative_url }}') center/cover no-repeat;
+  background: url('desert1.jpg') center/cover no-repeat;
   font-family: sans-serif;
   color: #333;
   margin: 0;
   padding: 0;
 }
 
-/* Fading effect between hero and body */
-.hero::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  height: 100px;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  z-index: 2;
-}
-
-/* ===== CONTENT ===== */
+/* ===== MAIN CONTAINER ===== */
 .main-container {
   max-width: 1000px;
   margin: auto;
   padding: 2rem 1rem;
   text-align: center;
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .intro {
@@ -102,7 +87,7 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Cards */
+/* ===== CARDS ===== */
 .content-boxes {
   display: flex;
   justify-content: center;
@@ -139,7 +124,7 @@ body {
   text-decoration: underline;
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 footer {
   font-size: 0.9rem;
   color: #555;
