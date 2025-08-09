@@ -1,61 +1,70 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavya Mishra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <!-- Navbar inside hero -->
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="webL.png" alt="My Logo" class="hero-logo">
+      <h1>Bhavya Mishra</h1>
+      <p>Machine Learning • AI • Simulation • Healthcare</p>
+    </div>
+  </section>
+
+  <!-- NAVBAR -->
   <div class="navbar">
     <div class="nav-left">
-      <a href="{{ '/' | relative_url }}"><strong>{{ site.title }}</strong></a>
+      <a href="index.html"><strong>Bhavya Mishra</strong></a>
     </div>
     <div class="nav-right">
-      <a href="{{ '/projects' | relative_url }}">Projects</a>
+      <a href="projects.html">Projects</a>
       <a href="https://research.thebhavyamishra.com">Research</a>
-      <a href="{{ '/about' | relative_url }}">About</a>
-      <a href="{{ '/message' | relative_url }}">Message</a>
+      <a href="about.html">About</a>
+      <a href="message.html">Message</a>
     </div>
   </div>
 
-  <!-- Hero Content -->
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <img src="/webL.png" alt="My Logo" class="hero-logo" />
-    <h1>Bhavya Mishra</h1>
-    <p>Machine Learning • AI • Simulation • Healthcare</p>
-  </div>
-</section>
+  <!-- MAIN CONTAINER -->
+  <div class="main-container">
 
-<!-- MAIN CONTAINER -->
-<div class="main-container">
-  <!-- INTRO -->
-  <div class="intro">
-    <p>Hello and welcome! I'm a Machine Learning researcher focused on LLMs, healthcare AI, and scientific computing.</p>
-    <p>Learn more <a href="about.md">About Me</a> or leave a <a href="message.md">Message</a>.</p>
-  </div>
-
-  <!-- 3 CARDS -->
-  <div class="content-boxes">
-    <div class="card">
-      <h3>📁 <a href="projects.md">Projects</a></h3>
-      <p>Explore tools and research-based software I’ve developed or contributed to.</p>
+    <!-- INTRO -->
+    <div class="intro">
+      <p>Hello and welcome! I'm a Machine Learning researcher focused on LLMs, healthcare AI, and scientific computing.</p>
+      <p>Learn more <a href="about.html">About Me</a> or leave a <a href="message.html">Message</a>.</p>
     </div>
 
-    <div class="card">
-      <h3>🔬 <a href="https://research.thebhavyamishra.com">Research</a></h3>
-      <p>Thesis, experiments, and simulation work — plus a link to my honors research.</p>
+    <!-- 3 CARDS -->
+    <div class="content-boxes">
+      <div class="card">
+        <h3>📁 <a href="projects.html">Projects</a></h3>
+        <p>Explore tools and research-based software I’ve developed or contributed to.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔬 <a href="https://research.thebhavyamishra.com">Research</a></h3>
+        <p>Thesis, experiments, and simulation work — plus a link to my honors research.</p>
+      </div>
+
+      <div class="card">
+        <h3>📬 Contact (Coming Soon)</h3>
+        <p>A form or chat system that lets users reach me directly.</p>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>📬 Contact (Coming Soon)</h3>
-      <p>A form or chat system that lets users reach me directly.</p>
-    </div>
+    <!-- FOOTER -->
+    <footer>
+      <p>Thanks for visiting! • <a href="resume.pdf">Resume</a> • 
+      <a href="mailto:bmishra01@manhattan.edu">Email</a> • 
+      <a href="https://linkedin.com/in/YOUR-LINK">LinkedIn</a></p>
+    </footer>
+
   </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>Thanks for visiting! • <a href="resume.pdf">Resume</a> • 
-    <a href="mailto:bmishra01@manhattan.edu">Email</a> • 
-    <a href="https://linkedin.com/in/YOUR-LINK">LinkedIn</a></p>
-  </footer>
-</div>
+</body>
+</html>
