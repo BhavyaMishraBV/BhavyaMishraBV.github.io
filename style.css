@@ -2,12 +2,25 @@
 .hero {
   position: relative;
   height: 320px;
-  background: url('bcVidStar1.mp4') center/cover no-repeat;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #ffffff;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 .hero-overlay {
